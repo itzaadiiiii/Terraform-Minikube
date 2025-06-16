@@ -60,6 +60,10 @@ create or copy the key file to Terraform-Minikube folder as we require it for t4
 > ssh -i <key-path> <user>@<ip-of-instance>
 
 ### 2 Install Kubectl on minikube instance
+```
+sudo apt update && sudo apt install snapd. 
+sudo snap install kubectl --classic
+```
 
 ### 3 Check minikube status
 > minikube status
