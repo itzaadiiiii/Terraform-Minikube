@@ -6,14 +6,15 @@ terraform-install.sh
 chmod +x terraform-install.sh
 ./terraform-install.sh
 ```
+## OR 
 ```
-sudo apt-get update && sudo apt-get install -y gnupg software-properties-common \
+sudo apt-get update && sudo apt-get install -y gnupg software-properties-common
+
 wget -O- https://apt.releases.hashicorp.com/gpg | \
 gpg --dearmor | \
-
 sudo tee /usr/share/keyrings/hashicorp-archive-keyring.gpg > /dev/null
-gpg --no-default-keyring \
 
+gpg --no-default-keyring \
 --keyring /usr/share/keyrings/hashicorp-archive-keyring.gpg \
 --fingerprint
 
@@ -23,7 +24,13 @@ sudo apt update
 
 sudo apt-get install terraform
 
-terraform -version
+terraform version
+
+touch ~/.bashrc
+
+terraform -install-autocomplete
+
+exec "$SHELL"
 ```
 
 ### 2 configure AWS-CLI
