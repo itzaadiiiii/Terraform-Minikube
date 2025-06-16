@@ -1,7 +1,7 @@
 # Terraform-Minikube setup
 # Stage -1 
 
-### 1 Install terraform 
+### 1) Install terraform 
 ```
 terraform-install.sh
 chmod +x terraform-install.sh
