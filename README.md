@@ -2,7 +2,6 @@
 
 ### 1 Install terraform 
 > sudo apt-get update && sudo apt-get install -y gnupg software-properties-common \
-
 wget -O- https://apt.releases.hashicorp.com/gpg | \
 gpg --dearmor | \
 
