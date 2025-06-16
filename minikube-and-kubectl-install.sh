@@ -12,5 +12,6 @@ minikube start --driver=driver --network-plugin=cni --cni=calico
 
 sudo mv /home/ubuntu/.kube /home/ubuntu/.minikube $HOME
 sudo chown -R $USER $HOME/.kube $HOME/.minikube
-minikube status
 kubectl version
+minikube version
+minikube status
