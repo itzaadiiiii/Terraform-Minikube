@@ -15,3 +15,9 @@ sudo apt update
 sudo apt-get install terraform
 
 terraform version
+
+touch ~/.bashrc
+
+terraform -install-autocomplete
+
+exec "$SHELL"
