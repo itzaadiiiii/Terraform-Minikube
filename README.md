@@ -1,4 +1,5 @@
 # Terraform-Minikube setup
+# Stage -1 
 
 ### 1 Install terraform 
 ```
@@ -65,6 +66,8 @@ terraform plan
 terraform apply
 ```
 ### 4 Varify t4g.small instance created in aws EC2 inside which we have minikube cluster configured via terraform
+
+# Stage -2 
 
 ### 1 ssh to minikube instance
 ```
