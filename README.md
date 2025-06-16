@@ -77,9 +77,11 @@ ssh -i key-path user@ip-of-instance
 ### 3) Install minikube and Kubectl
 
 #### i) Run on local - copy minikube installation file from local cloned folder
+
 ```
 cd Terraform-Minikube/
 ```
+
 
 ```
 scp -i ~/Downloads/linuxxx.pem minikube-and-kubectl-install.sh ubuntu@IP:.
@@ -93,7 +95,7 @@ sudo apt update && sudo apt install snapd. 
 sudo snap install kubectl --classic
 ```
 
-#Start Minikube cluster and if already run command and giving issue the delete .minikube folder and run below minikube start command again and use --driver=docker not none orelse doesnt work 
+# Start Minikube cluster and if already run command and giving issue the delete .minikube folder and run below minikube start command again and use --driver=docker not none orelse doesnt work 
 
 ```
 minikube start --driver=driver --network-plugin=cni --cni=calico
