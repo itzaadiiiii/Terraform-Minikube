@@ -1,9 +1,9 @@
 # Terraform-Minikube setup
 
 ### 1 Install terraform 
-> terraform-install.sh
-> chmod +x terraform-install.sh
-> ./terraform-install.sh
+>> terraform-install.sh
+>> chmod +x terraform-install.sh
+>> ./terraform-install.sh
 
 ### 2 configure AWS-CLI
 > aws configure      # put access key secret key or create role and attach to ec2 instance
