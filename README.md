@@ -85,7 +85,7 @@ cd Terraform-Minikube/
 
 ```
 scp -i ~/Downloads/linuxxx.pem minikube-and-kubectl-install.sh ubuntu@IP:.
-``
+```
 
 # OR
 ### Install Both Minikube and Kubectl by below command
@@ -95,7 +95,8 @@ sudo apt update && sudo apt install snapd. 
 sudo snap install kubectl --classic
 ```
 
-# Start Minikube cluster and if already run command and giving issue the delete .minikube folder and run below minikube start command again and use --driver=docker not none orelse doesnt work 
+# Start Minikube cluster and if already run command and giving issue the delete .minikube folder and run below minikube start command again and use --driver=docker not none orelse doesnt work
+
 
 ```
 minikube start --driver=driver --network-plugin=cni --cni=calico
@@ -106,31 +107,37 @@ kubectl version
 ```
 
 ### 2) Install Kubectl on minikube instance
+
 ```
 sudo apt update && sudo apt install snapd. 
 sudo snap install kubectl --classic
 ```
 
 ### 3) Check minikube status
+
 ```
 minikube status
 ```
 
 ### 4) Start miniikube cluster
+
 ```
 minikube start --driver=docker
 ```
 
 ### 5) Varify Cluster is Running
+
 ```
 kubectl get nodes
 ```
 ### 6) When you are done, you can stop the Minikube cluster with:
+
 ```
 minikube stop
 ```
 
 ### 7) Optional: Delete Minikube Cluster - If you wish to delete the Minikube cluster entirely, you can do so with:
+
 ```
 minikube delete
 ```
