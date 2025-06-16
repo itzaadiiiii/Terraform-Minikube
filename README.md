@@ -80,9 +80,11 @@ ssh -i key-path user@ip-of-instance
 ```
 cd Terraform-Minikube/
 ```
+
 ```
-scp -i ~/Downloads/linuxxx.pem minikube-and-kubectl-install.sh ubuntu@13.201.175.142:.
+scp -i ~/Downloads/linuxxx.pem minikube-and-kubectl-install.sh ubuntu@IP:.
 ``
+
 # OR
 ### Install Both Minikube and Kubectl by below command
 
