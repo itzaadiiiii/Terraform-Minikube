@@ -95,7 +95,8 @@ sudo apt update && sudo apt install snapd. 
 sudo snap install kubectl --classic
 ```
 
-# Start Minikube cluster and if already run command and giving issue the delete .minikube folder and run below minikube start command again and use --driver=docker not none orelse doesnt work
+# Start Minikube cluster :-
+### ( And if already run command and giving issue the delete .minikube folder and run below minikube start command again and use " --driver=docker " not none orelse doesnt work )
 
 
 ```
