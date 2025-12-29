@@ -6,7 +6,7 @@ terraform {
   required_providers {
     aws = {
       source  = "hashicorp/aws"
-      version = "~> 5.99.1"
+      version = "~> 6.27.0"
     }
   }
 }
@@ -37,6 +37,13 @@ resource "aws_instance" "terraform_test_ec2" {
   instance_type = "t4g.small"
   ami           = data.aws_ami.server_ami.id
   key_name      = "linuxxx"
+  root_block_device {
+      volume_size = 17     # 20 GB (within 30 GB free)
+      volume_type = "gp2"   # Free Tier safe
+      encrypted   = true
+    }
+
+
 
   tags = {
     Name = "terraform_ec2_minikube_${count.index}"
