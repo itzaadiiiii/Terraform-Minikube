@@ -70,7 +70,7 @@ terraform apply
 
 # Stage -2 
 
-### 1) ssh to minikube instance
+### 1) ssh to minikube instance ( From Gitbash , if done from session-manager might face some issues while installing)
 ```
 ssh -i key-path user@ip-of-instance
 ```
