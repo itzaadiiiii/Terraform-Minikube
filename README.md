@@ -74,7 +74,20 @@ terraform apply
 ```
 ssh -i key-path user@ip-of-instance
 ```
-### 3) Install minikube and Kubectl
+### 3) Install Kubectl
+
+```bash
+# Update system and install snap
+sudo apt update && sudo apt install snapd -y
+
+# Install kubectl via snap
+sudo snap install kubectl --classic
+
+# Verify installation
+kubectl version --client
+```
+
+---
 
 #### i) Run on local - copy minikube installation file from local cloned folder
 
@@ -100,7 +113,7 @@ sudo snap install kubectl --classic
 
 
 ```
-minikube start --driver=driver --network-plugin=cni --cni=calico
+minikube start --driver=docker --network-plugin=cni --cni=calico
 sudo mv /home/ubuntu/.kube /home/ubuntu/.minikube $HOME
 sudo chown -R $USER $HOME/.kube $HOME/.minikube
 minikube version
